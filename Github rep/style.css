@@ -1,0 +1,339 @@
+     ]\
+<style>
+/* 
+   1. Resets & Base Styles
+   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+ align-item: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   
+background: #000046;
+    color: #FFFFFF;
+   height: 100vh;
+}
+
+/* ==========================================================================
+   2. Shared Layout Components
+   ========================================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: #FCC800;
+}
+/* Buttons */
+
+/*
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px; 
+
+
+}
+
+.secondary {
+    background: #777;
+}
+*/
+
+        /* The Button styling */
+        .btn {
+            background-color: #00bfff; /* Bright cyan/blue background */
+            color: #00004d;            /* Dark blue text color */
+            padding: 15px 40px;        /* Vertical and horizontal spacing */
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            border-radius: 10px;       /* Rounded corners */
+            cursor: pointer;
+            transition: all 0.3s ease; /* Smooth transition effect */
+            outline: none;
+        }
+
+        /* Hover Effect */
+        .btn:hover {
+            background-color: #0099cc; /* Slightly darker cyan on hover */
+            color: #ffffff;            /* Turns text white */
+            transform: scale(1.05);    /* Slightly grows the button */
+            box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4); /* Glow effect */
+        }
+/* dropdown menu */
+
+.dropdown-menu
+{
+display:none;
+postion:absolute;
+ /* background-color: #f9f9f9;*/
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+		
+}
+
+.dropdown:hover .dropdown-menu
+{
+display:block;
+}
+
+.dropdown-menu li{
+margin:0;
+}
+
+.dropdown-menu li a {
+    padding: 12px 15px;
+    color: #fff;
+}
+.dropdown-menu li a:hover {
+ /* background-color: #f1f1f1;*/
+  background-color: #FCC800;
+    color: #000;
+}
+
+
+/*menu-item has-dropdown*/
+nav ul{
+list-style: none;
+margin :0;
+padding :0;
+display: flex;
+
+}
+nav ul li
+{
+position: relative;
+margin-left:30px;
+}
+nav ul li a{
+
+text-decoration:none;
+color:#fff;
+padding:10px;
+display:block;
+
+}
+
+
+/* ==========================================================================
+   3. Section Layouts
+   ========================================================================== */
+
+/* Header */
+
+header {
+    padding: 20px 0;
+   /* border-bottom: 1px solid #eee; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+color: #FCC800;
+
+}
+
+.logo {
+
+    font-size: 45px;
+   color: #FFD200
+}
+
+nav{
+display : flex;
+ }
+
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #FFFFFF;
+}
+ul{
+
+text-align: center;
+}
+nav li a
+{
+text-align: center;
+float: none;
+}
+
+
+/* Hero */
+
+.hero {
+    padding: 100px 5%;
+    border-bottom: 9px solid #F9C80E;
+
+}
+
+.hero-content {
+    display: flex;
+    
+    gap: 50px;
+
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+
+
+
+/* Services */
+
+.services {
+    padding: 80px 5%;
+    text-align: center;
+/*background:#090088;*/
+background:#0A0B42;
+
+
+}
+
+
+.services h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.service-unit{
+background:#0A0B42;
+
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+}
+
+.service-card {
+    padding: 35px 20px;
+    border: 1px solid #ddd;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* About */
+
+.about {
+    padding: 100px 10%;
+    background: #000046;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #FCC800;
+}
+
+.about p {
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+
+}
+
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 100px 20px;
+ background: #2D7BB5; 
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #02006c;
+    color: white;
+}
+
+
+/* This is how we can make the site Responsive */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+</style>
